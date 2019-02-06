@@ -43,6 +43,13 @@ public class PortalController {
 	}
 
 
+	@RequestMapping(value = "/hello2", method = RequestMethod.GET)
+	@ResponseBody
+	public String sayHello3() {
+		
+		
+		return "Nice to meet you!";
+	}
 	
 	
 }
