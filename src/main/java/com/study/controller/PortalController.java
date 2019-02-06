@@ -12,12 +12,16 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import com.study.service.PortalService;
+
 @Controller
 @RequestMapping("/portal")
 public class PortalController {
 
 	
-
+	@Autowired
+	private PortalService portalService;
+	
 	//
 	@PostConstruct
 	public void init() {
@@ -48,7 +52,7 @@ public class PortalController {
 	public String sayHello3() {
 		
 		
-		return "Nice to meet you!";
+		return portalService.getHelloMessage();
 	}
 	
 	
