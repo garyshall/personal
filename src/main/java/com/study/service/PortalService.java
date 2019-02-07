@@ -8,7 +8,7 @@ public class PortalService {
 	public String getHelloMessage() {
 		String message = "Hello";
 		message += " ~~~ ";
-		message += "$aaaaaaaa$";
+		message += "$bbbbbbbb$";
 		return message;
 	}
 
